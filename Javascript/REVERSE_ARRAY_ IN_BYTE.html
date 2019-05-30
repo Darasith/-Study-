@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        var data1 = [1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0];
+        var nearr=[],rearr=[];//OUTPUT reverse the array in each byte   
+        var k=1;
+        var p=0;
+        for(var i=0;i<data.length/8;i++){
+            for(var j=0;j<8;j++){
+                nearr[p]=data[data.length-k];
+                k++;
+                p++;
+            }
+            nearr.reverse();
+            for(var r=0;r<8;r++){
+              rearr.push(nearr[r]);
+            }
+        }
+        return rearr;
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
