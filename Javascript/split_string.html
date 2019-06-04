@@ -1,0 +1,27 @@
+<html lang="en">
+<head>//splitstring
+    <script type="text/javascript">
+        var str="abdjskl"; //Output:["ab","dj","sk","l_"]
+        var arr=str.split("");
+        var col=[];
+        var res=[];
+        for(i=0;i<arr.length;i+=2){
+            var pi=[];
+            pi.push(arr[i],arr[i+1]);
+            col.push(pi);
+        }
+        for(i=0;i<col.length;i++){
+            var nestr="";
+            nestr=col[i].join("");
+            res.push(nestr);
+        }
+        if(res[res.length-1].length%2!=0){
+            res[res.length-1]+="_";
+        }
+        return res;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
